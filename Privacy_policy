@@ -1,0 +1,197 @@
+<html><head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Gizlinlik syýasaty</title>
+      <style> body { font-family:sans-serif; padding:1em; background:white; line-height:1.5; } 
+              p{color: #4c4c4c;}</style>
+    <style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css"></style></head>
+    <body>
+    <strong>Gizlinlik syýasaty</strong> <p>
+                  Ýaş şahyr Mülkaman Jumaniýazowyň goşgular ýygyndysy programmasy.
+                  Bu programma Mülkaman Jumaniýazow tarapyndan mugt berilýär we bolşy ýaly ulanmak üçin niýetlenendir
+                </p>   <p>
+                    Programma tarapyndan ulanylýan üçünji tarap hyzmat üpjün edijileriniň gizlinlik ýörelgesine baglanyşyk
+                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Hyzmatlary</a></li><li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li><li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Firebase üçin Google Analitika</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Maglumatlar</strong></p> <p>
+                 Programmamyzy ulananyňyzda, programmada ýalňyşlyk ýüze çykan ýagdaýynda, Log Data atly telefonyňyzda maglumatlary (üçünji tarap
+                 önümleriniň üsti bilen) ýygnaýandygymyzy habar bermek isleýäris. Bu hasaba alyş maglumatlary, enjamyňyzyň Internet protokoly (“IP”) salgysy, enjamyň
+                 ady, operasiýa ulgamynyň wersiýasy, Hyzmatymyzy ulananyňyzda programmanyň konfigurasiýasy, Hyzmatdan peýdalanmagyň wagty we senesi we beýleki
+                 statistika ýaly maglumatlary öz içine alyp biler. .
+                </p> <p><strong>Kukiler</strong></p> <p>
+                  Kukiler, adatça näbelli özboluşly kesgitleýjiler hökmünde ulanylýan az mukdarda maglumatly faýllardyr. Bular girýän web sahypalaryňyzdan brauzeriňize
+                  iberilýär we enjamyňyzyň içerki ýadynda saklanýar.
+                </p> <p>
+                  Bu Programma bu "kukileri" hiç hili ulanmaýar. Sebäbi biziň programmamyz offline görnüşinde düzülen goşgular ýygyndysydyr.</strong></p> 
+                <p><strong>Howpsuzlyk</strong></p> <p>
+                 Şahsy maglumatlaryňyzy bermäge bolan ynamyňyza ýokary baha berýäris, şonuň üçin ony goramak üçin täjirçilik taýdan kabul ederlikli serişdeleri ulanmaga
+                 çalyşýarys. Ýöne ýadyňyzdan çykarmaň, internet arkaly ýaýratmagyň hiç bir usuly ýa-da elektroniki usul 100% ygtybarly  däldir we biz
+                 onuň howpsuzlygyny kepillendirip bilmeris.
+                </p> <p><strong>Beýleki sahypalara baglanyşyklar</strong></p> <p>
+                 Bu Programma beýleki sahypalara baglanyşyklary öz içine alyp biler. Üçünji tarap baglanyşygyna bassaňyz, şol sahypa ugrukdyrylarsyňyz. Bu daşarky
+                 saýtlaryň biz tarapyndan dolandyrylmaýandygyny ýadyňyzdan çykarmaň. Şonuň üçin bu web sahypalarynyň Gizlinlik Ýörelgelerini gözden geçirmegiňizi
+                 maslahat berýäris. Mazmuny, gizlinlik ýörelgeleri ýa-da üçünji tarap sahypalarynyň ýa-da hyzmatlarynyň amallary üçin hiç hili jogapkärçiligimiz ýok.
+                </p> <p><strong>Çagalaryň şahsy durmuşy</strong></p> <p>
+                  Bu Programma 10 ýaşdan kiçi hiç kime ýüzlenmeýär. 10 ýaşdan kiçi çagalardan şahsyýeti anyklaýan maglumatlary bilgeşleýin ýygnamaýarys, 10 ýaşdan kiçi
+                  çaganyň bize şahsy maglumatlary berendigini bilsek, derrew serwerlerimizden pozýarys. Ene-ataňyz ýa-da hossaryňyz bolsa we çagaňyzyň bize şahsy 
+                  maglumatlary berendigini bilýän bolsaňyz, zerur çäreleri görmek üçin bize ýüz tutuň.
+                </p> <p><strong>Bu Gizlinlik Ýörelgelerinde üýtgeşmeler</strong></p> <p>
+                  Gizlinlik Ýörelgelerimizi wagtal-wagtal täzeläp bileris. Şeýlelik bilen, islendik üýtgeşme üçin bu sahypany wagtal-wagtal gözden geçirmek
+                  maslahat berilýär. Bu sahypada täze Gizlinlik ýörelgelerini ýerleşdirip, üýtgeşmeler barada size habar bereris.
+                </p> <p><strong>Biz bilen habarlaşyň</strong></p> <p>
+                  Gizlinlik syýasatymyz barada soraglaryňyz ýa-da teklipleriňiz bar bolsa, bize ýüz tutuň.
+                </p> 
+    
+    
+      <div id="torrent-scanner-popup" style="display: none;"></div><div data-flash-app-container="true" id="flash_player_app_root"></div></body></html>
